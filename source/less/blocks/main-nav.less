@@ -1,6 +1,11 @@
+.main-nav {
+  position: relative;
+}
+
 .main-nav__list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .main-nav__button {
@@ -11,12 +16,15 @@
   height: 30px;
   padding: 0;
   background-position: center;
-}
-
-.main-nav__button--open {
-  background-image: url("../img/header-button.svg");
+  position: absolute;
+  top: -52px;
+  left: 270px;
 }
 
 .main-nav__button--close {
-  background-image: url("../img/close.svg");
+  background-image: url("../img/header-button.svg");
+}
+
+.main-nav__button--open {
+  background-image: url("../img/open.svg");
 }

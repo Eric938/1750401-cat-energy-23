@@ -1,32 +1,37 @@
 .example {
-  background: #eaeaea;
+  background: @background-gray;
 }
 
 .example__wrapper {
   .center();
+  padding: 27px 20px 31px;
 }
 
 .example__title {
-  margin: 21px 0 23px;
-  padding: 5px 0;
+  font-family: "Oswald", "Arial Narrow", "Arial", sans-serif;
+  margin: 0;
+  margin-bottom: 33px;
   font-size: 36px;
   font-weight: 400;
-  line-height: 40px;
-  color: #000000;
+  line-height: 1.11;
+  color: @black;
 }
 
 .example__text {
-  padding: 5px 0;
   margin: 0;
-  font-family: "Arial", "Oswald", sans-serif;
+  margin-bottom: 25px;
   width: 280px;
 }
 
+.example__box-first {
+  margin-right: 28px;
+}
+
 .example__expenses {
-  line-height: 20px;
-  padding: 5px;
-  margin: 15px 0 37px;
-  color: #000000;
+  font-family: "Oswald", "Arial Narrow", "Arial", sans-serif;
+  line-height: 1.43;
+  margin-bottom: 42px;
+  color: @black;
   text-transform: uppercase;
   text-align: center;
 }

@@ -1,42 +1,53 @@
+.catalog-card {
+  padding: 19px 20px 25px;
+  border-top: 1px solid @catalog-card-grey;
+}
+
+.catalog-card__link-img {
+  display: block;
+  margin-bottom: 13px;
+}
+
 .catalog-card__link-title {
   text-decoration: none;
-  color: #222222;
+  color: @font-dark-gray;
+  display: block;
+  margin-bottom: 14px;
 }
 
 .catalog-card__title {
   width: 80px;
   text-align: left;
-  padding: 5px;
   margin: 0;
-  font-family: inherit;
+  font-family: "Oswald", "Arial Narrow", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.25;
   text-transform: uppercase;
 }
 
 .catalog-card__info {
-  font-family: "Arial", "Oswald", sans-serif;
   font-size: 12px;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 1.33;
   color: inherit;
+  border-collapse: collapse;
   border: none;
+  margin-bottom: 24px;
 }
 
 .catalog-card__description {
   font-weight: 400;
   text-align: left;
-  width: 71px;
+  width: 68px;
 }
 
 .catalog-card__value {
   text-align: right;
-  width: 71px;
+  width: 68px;
 }
 
 .catalog-card__button {
   font-size: 16px;
-  line-height: 20px;
-  margin: 22px 0 25px;
+  line-height: 1.25;
 }

@@ -1,40 +1,44 @@
 .promo__wrapper {
-  min-height: 501px;
+  min-height: 479px;
   position: relative;
-  .center();
+  padding-bottom: 22px;
 }
 
 .promo__text-wrapper {
-  background: #68b738d9;
+  background-color: @background-green;
   background-image: url("../img/background-cat.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   min-height: 302px;
+  box-sizing: border-box;
+  padding: 27px 20px;
 }
 
 .promo__title {
+  font-family: "Oswald", "Arial Narrow", "Arial", sans-serif;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
   font-weight: 400;
-  color: #ffffff;
-  width: 255px;
   text-align: center;
-  padding: 5px;
-  margin: 22px 0 15px;
+  color: @white;
+  width: 255px;
+  margin: 0 auto 25px;
 }
 
 .promo__text {
-  color: #ffffff;
-  padding: 5px;
-  margin: 0;
-  line-height: 14px;
+  font-family: "Oswald", "Arial Narrow", "Arial", sans-serif;
+  color: @white;
+  margin: 0 auto;
+  line-height: 1;
   text-transform: uppercase;
   text-align: center;
 }
 
 .promo__button {
+  position: relative;
+  top: 302px;
   font-size: inherit;
   line-height: inherit;
-  margin-bottom: 22px;
 }
 
 .promo__img {
