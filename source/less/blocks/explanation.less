@@ -1,0 +1,48 @@
+.explanation__wrapper {
+  .center();
+  padding: 27px 20px 42px;
+}
+
+.explanation__title {
+  font-family: "Oswald", "Arial Narrow", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.11;
+  margin: 0;
+  margin-bottom: 38px;
+  color: @black;
+}
+
+.explanation__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.explanation__item {
+  padding: 3px 0 3px 75px;
+  margin: 0;
+  margin-bottom: 20px;
+  width: 200px;
+  background-repeat: no-repeat;
+
+  &--healthy {
+    background-image: url("../img/list/leaf.svg");
+  }
+
+  &--powder {
+    background-image: url("../img/list/powder.svg");
+  }
+
+  &--eating {
+    background-image: url("../img/list/powder.svg");
+  }
+
+  &--fast {
+    background-image: url("../img/list/powder.svg");
+  }
+}
+
+.explanation__item:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,76 @@
+.program-card {
+  padding: 30px 20px 22px;
+  margin-bottom: 20px;
+  background-color: @light-gray;
+}
+
+.program-card:last-child {
+  margin-bottom: 0;
+}
+
+.program-card__title {
+  font-family: "Oswald", "Arial Narrow", "Arial", sans-serif;
+  margin: 0;
+  margin-bottom: 29px;
+  padding-left: 71px;
+  font-size: 24px;
+  line-height: 1.54;
+  font-weight: 400;
+  color: @black;
+  text-transform: uppercase;
+  position: relative;
+
+  &--weight-loss::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -10px;
+    width: 50px;
+    height: 53px;
+    background-image: url("../img/weight-loss.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &--muscles-gain::before {
+    content: "";
+    position: absolute;
+    left: -11px;
+    top: -5px;
+    width: 67px;
+    height: 50px;
+    background-image: url("../img/muscles-gain.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.program-card__text {
+  width: 240px;
+  margin: 0;
+  margin-bottom: 19px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid @border-gray;
+}
+
+.program-card__link {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  font-family: "Oswald", "Arial Narrow", "Arial", sans-serif;
+  text-decoration: none;
+  color: @black;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.program-card__link::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 100px;
+  width: 24px;
+  height: 12px;
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+}

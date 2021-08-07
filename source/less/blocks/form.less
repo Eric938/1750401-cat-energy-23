@@ -1,0 +1,148 @@
+.form__field-row {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.12;
+  text-transform: uppercase;
+  color: inherit;
+  font-family: "Oswald", "Arial Narrow", "Arial", sans-serif;
+  font-weight: 400;
+  border: none;
+}
+
+.form__textfield-label {
+  padding: 5px 0;
+  margin-right: 10px;
+  height: 35px;
+  box-sizing: border-box;
+}
+
+.form__textfield {
+  padding: 5px 13px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 1px solid @textfield-gray;
+  margin-bottom: 14px;
+  height: 35px;
+}
+
+.form__textfield-with-icon {
+  padding-right: 45px;
+}
+
+.form__textfield-last-child {
+  margin-bottom: 0;
+}
+
+.form__radio-label {
+  position: relative;
+  display: block;
+  padding: 7px 0 8px 45px;
+}
+
+.form__radio:checked + .form__radio-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/radio.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__radio + .form__radio-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid @gray;
+}
+
+.form__legend {
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.08;
+  color: @black;
+  text-align: left;
+  text-transform: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__message-label {
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.08;
+  color: @black;
+  text-align: left;
+  padding: 0;
+  margin-bottom: 37px;
+  text-transform: none;
+  display: block;
+}
+
+.form__message-field {
+  width: 254px;
+  height: 150px;
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: uppercase;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 400;
+  border: 1px solid @textfield-gray;
+  padding: 9px 13px;
+  display: block;
+}
+
+.form__checkbox-label {
+  position: relative;
+  padding: 7px 0 8px 46px;
+  display: block;
+}
+
+.form__checkbox + .form__checkbox-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid @gray;
+}
+
+.form__checkbox:checked + .form__checkbox-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid @gray;
+  background-image: url("../img/checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__button {
+  margin-bottom: 16px;
+  width: 280px;
+  padding: 10px 45px;
+}
+
+.form__text {
+  font-size: 14px;
+  line-height: 1.14;
+  font-family: "Arial", sans-serif;
+  text-transform: none;
+  margin: 0;
+  text-align: center;
+  color: @black;
+}

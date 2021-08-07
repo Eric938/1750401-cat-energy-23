@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo" href=""><img class="page-header__img" src="img/logo-mobile.svg" width="191" height="38" alt="Кэт энерджи логотип"></a>
       <nav class="main-nav">
-        <button class="main-nav__button" type="button"><img src="img/header-button.svg" width="24" height="16" alt=""></button>
-        <ul class="main-nav__list nav-list visually-hidden">
+        <button class="main-nav__button main-nav__button--close" type="button"></button>
+        <ul class="main-nav__list nav-list">
           <li class="nav-list__item nav-list__item--current"><a class="nav-list__link" href="">главная</a></li>
           <li class="nav-list__item"><a class="nav-list__link" href="catalog.html">каталог продукции</a></li>
           <li class="nav-list__item"><a class="nav-list__link" href="form.html">подбор программы</a></li>
@@ -29,7 +30,7 @@
             <p class="promo__text">Занялся собой? Займись котом!</p>
             <a class="promo__button button" href="form.html">подобрать программу</a>
           </div>
-          <img class="promo__img" src="img/food.jpg" width="280" height="270" alt="Банка кошачей еды со вкусом курицы">
+          <img class="promo__img" src="img/food.png" width="280" height="270" alt="Банка кошачей еды со вкусом курицы">
         </div>
       </section>
 
@@ -67,7 +68,7 @@
         <div class="example__wrapper">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          <div class="example__box box">
+          <div class="example__box box example__box-first">
             <span class="box__text">5 кг</span>
             <span class="box__text-bottom">снижение веса</span>
           </div>
@@ -82,16 +83,16 @@
           <div class="example__slider slider">
             <div class="slider__list">
               <div class="slider__item" style="width: 100%">
-                <img class="slider__img" src="img/before.jpg" width="311" height="232" alt="Кот до похудения">
+                <img class="slider__img" src="img/before.png" width="311" height="232" alt="Кот до похудения">
               </div>
               <div class="slider__item" style="left: 0%; width: 0%">
-                <img class="slider__img visually-hidden" src="img/after.jpg" width="311" height="232" alt="Кот после похудения">
+                <img class="slider__img visually-hidden" src="img/after.png" width="311" height="232" alt="Кот после похудения">
               </div>
             </div>
             <span class="slider__text slider__text--before">было</span>
             <div class="slider__scale">
               <div class="slider__scale-line"></div>
-              <div class="slider__toggle" tabindex="0" style="left: 0%"></div>
+              <div class="slider__toggle" tabindex="0" style="left: 2%"></div>
             </div>
             <span class="slider__text slider__text--after">стало</span>
           </div>
@@ -100,7 +101,7 @@
 
       <section class="invitation">
         <div class="invitation__wrapper">
-          <h2 class="invitation__text">приглашаем  к сотрудничеству дилеров!</h2>
+          <h2 class="invitation__text">приглашаем к сотрудничеству дилеров!</h2>
           <p class="invitation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
       </section>
