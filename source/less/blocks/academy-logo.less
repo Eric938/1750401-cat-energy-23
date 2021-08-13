@@ -1,5 +1,12 @@
 .academy-logo {
   padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .academy-logo__link-text {
@@ -9,4 +16,8 @@
   font-weight: 400;
   text-decoration: none;
   color: inherit;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 22px;
+  }
 }

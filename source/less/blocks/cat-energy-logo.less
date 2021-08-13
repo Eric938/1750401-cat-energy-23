@@ -1,4 +1,18 @@
 .cat-energy-logo {
   padding-bottom: 32px;
   border-bottom: 1px solid @border-gray;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.cat-energy-logo__link {
+  display: block;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
 }

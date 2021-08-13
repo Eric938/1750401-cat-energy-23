@@ -3,10 +3,31 @@
   margin: 0 auto;
   border-bottom: 1px solid @border-gray;
   min-height: 65px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    width: @tablet-width;
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
 }
 
 .page-header__logo {
-  padding: 10px 0 17px 20px;
+  padding: 10px 0 13px 20px;
   margin-right: 65px;
-  display: inline-block;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 95px;
+    padding: 24px 0 65px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 538px;
+    padding: 53px 0 111px 110px;
+  }
 }

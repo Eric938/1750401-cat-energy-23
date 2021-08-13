@@ -1,6 +1,18 @@
 .explanation__wrapper {
   .center();
   padding: 27px 20px 42px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding: 0 30px 47px;
+    border-bottom: 1px solid @border-light-gray;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1224px;
+    padding: 0 106px 205px 110px;
+    border-bottom: none;
+  }
 }
 
 .explanation__title {
@@ -11,12 +23,24 @@
   margin: 0;
   margin-bottom: 38px;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 72px;
+    font-size: 60px;
+    line-height: 1;
+  }
 }
 
 .explanation__list {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .explanation__item {
@@ -26,20 +50,52 @@
   width: 200px;
   background-repeat: no-repeat;
 
+  @media (min-width: @tablet-width) {
+    width: 250px;
+    padding: 111px 74px 134px 0;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 111px 0 57px;
+  }
+
   &--healthy {
     background-image: url("../img/list/leaf.svg");
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/list/leaf.svg"), url("../img/one.svg");
+      background-position: 0 0, 125px 0;
+    }
   }
 
   &--powder {
     background-image: url("../img/list/powder.svg");
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/list/powder.svg"), url("../img/two.svg");
+      background-position: 0 0, 120px 0;
+    }
   }
 
   &--eating {
-    background-image: url("../img/list/powder.svg");
+    background-image: url("../img/list/tableware.svg");
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/list/tableware.svg"), url("../img/three.svg");
+      background-position: 0 0, 125px 0;
+      padding-bottom: 57px;
+    }
   }
 
   &--fast {
-    background-image: url("../img/list/powder.svg");
+    background-image: url("../img/list/clock.svg");
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/list/clock.svg"), url("../img/four.svg");
+      background-position: 0 0, 120px 0;
+      padding-bottom: 57px;
+    }
   }
 }
 
