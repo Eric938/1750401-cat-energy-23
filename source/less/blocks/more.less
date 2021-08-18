@@ -6,6 +6,13 @@
   padding: 78px 20px 25px;
   border-top: 1px solid @catalog-card-grey;
   border-bottom: 1px solid @catalog-card-grey;
+
+  @media (min-width: @tablet-width) {
+    padding: 161px 37px 38px;
+    border: 2px solid @light-gray;
+    width: 246px;
+    margin: 0;
+  }
 }
 
 .more__title {
@@ -18,6 +25,13 @@
   text-transform: uppercase;
   color: @dark-gray;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 1.1;
+    width: 140px;
+    margin: 0 auto 33px;
+  }
 }
 
 .more__text {
@@ -26,6 +40,13 @@
   text-align: center;
   margin: 0;
   margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 1.12;
+    width: 180px;
+    margin: 0 auto 87px;
+  }
 }
 
 .more__button {

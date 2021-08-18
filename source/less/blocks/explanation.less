@@ -3,14 +3,14 @@
   padding: 27px 20px 42px;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
-    padding: 0 30px 47px;
+    width: 629px;
+    padding: 0 109px 47px 30px;
     border-bottom: 1px solid @border-light-gray;
   }
 
   @media (min-width: @desktop-width) {
     width: 1224px;
-    padding: 0 106px 205px 110px;
+    padding: 0 106px 0 110px;
     border-bottom: none;
   }
 }
@@ -39,7 +39,8 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    position: relative;
+    counter-reset: li;
   }
 }
 
@@ -50,55 +51,69 @@
   width: 200px;
   background-repeat: no-repeat;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @media (min-width: @tablet-width) {
     width: 250px;
-    padding: 111px 74px 134px 0;
-    margin: 0;
+    padding: 111px 0 57px;
+    margin: 0 129px 37px 0;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: counter(li);
+      counter-increment: li;
+      position: absolute;
+      transform: translate(60%, -53%);
+      font-size: 280px;
+      line-height: 1;
+      color: @light-gray;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    padding: 111px 0 57px;
+    margin: 0;
+    margin-right: 74px;
+
+    &:nth-child(even) {
+      margin-right: 74px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 
   &--healthy {
     background-image: url("../img/list/leaf.svg");
-
-    @media (min-width: @tablet-width) {
-      background-image: url("../img/list/leaf.svg"), url("../img/one.svg");
-      background-position: 0 0, 125px 0;
-    }
   }
 
   &--powder {
     background-image: url("../img/list/powder.svg");
-
-    @media (min-width: @tablet-width) {
-      background-image: url("../img/list/powder.svg"), url("../img/two.svg");
-      background-position: 0 0, 120px 0;
-    }
   }
 
   &--eating {
     background-image: url("../img/list/tableware.svg");
-
-    @media (min-width: @tablet-width) {
-      background-image: url("../img/list/tableware.svg"), url("../img/three.svg");
-      background-position: 0 0, 125px 0;
-      padding-bottom: 57px;
-    }
   }
 
   &--fast {
     background-image: url("../img/list/clock.svg");
-
-    @media (min-width: @tablet-width) {
-      background-image: url("../img/list/clock.svg"), url("../img/four.svg");
-      background-position: 0 0, 120px 0;
-      padding-bottom: 57px;
-    }
   }
 }
 
-.explanation__item:last-child {
-  margin-bottom: 0;
+.explanation__item-text {
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    z-index: 1;
+  }
 }

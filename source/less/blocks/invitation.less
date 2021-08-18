@@ -1,5 +1,9 @@
 .invitation {
-  position: relative;
+  @media (min-width: @desktop-width) {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1220px;
+  }
 }
 
 .invitation__wrapper {
@@ -20,7 +24,7 @@
     background-color: @white;
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: 0;
   }
 }
 

@@ -1,4 +1,16 @@
 .catalog-cards__wrapper {
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 163px 30px 68px;
+    width: 708px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 22px 110px 75px;
+    width: 1220px;
+  }
 }

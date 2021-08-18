@@ -8,12 +8,20 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    width: @tablet-width;
+    width: 708px;
     border-bottom: none;
+    padding: 24px 30px;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
+    width: 1220px;
+    padding: 53px 110px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
   }
 }
 
@@ -22,12 +30,8 @@
   margin-right: 65px;
 
   @media (min-width: @tablet-width) {
-    margin-right: 95px;
-    padding: 24px 0 65px 30px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-right: 538px;
-    padding: 53px 0 111px 110px;
+    margin-right: auto;
+    padding: 0;
+    align-self: flex-start;
   }
 }
