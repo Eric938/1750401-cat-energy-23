@@ -4,6 +4,7 @@
   text-decoration: none;
   font-family: "Oswald", "Arial Narrow", "Arial", sans-serif;
   font-size: inherit;
+  line-height: inherit;
   font-weight: 400;
   text-transform: uppercase;
   display: inline-block;
@@ -11,4 +12,8 @@
   width: 200px;
   padding: 10px 40px;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 14px 23px;
+  }
 }

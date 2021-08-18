@@ -5,4 +5,20 @@
 .page-footer__wrapper {
   .center();
   padding: 39px 20px 22px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding: 54px 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding: 59px 110px 49px;
+  }
 }

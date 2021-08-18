@@ -1,5 +1,59 @@
+.slider {
+  padding: 0 4px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    height: 395px;
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    align-self: flex-end;
+  }
+}
+
 .slider__list {
   margin-bottom: 27px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: 708px;
+    height: 350px;
+    margin-bottom: 15px;
+  }
+}
+
+.slider__item {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: -191px;
+    display: flex;
+    overflow: hidden;
+    bottom: 0;
+
+    &:last-child {
+      justify-content: flex-end;
+    }
+  }
+}
+
+.slider__img {
+  @media (min-width: @tablet-width) {
+    flex: none;
+    display: block;
+    object-fit: contain;
+    object-position: center;
+    width: 708px;
+    height: 520px;
+  }
+}
+
+.slider__scale-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .slider__text {
@@ -8,11 +62,21 @@
   line-height: 1.25;
   color: @black;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 1.48;
+    border-bottom: 1px dotted @black;
+  }
 }
 
 .slider__scale {
   position: relative;
   margin: 0 13px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 20px 0 24px;
+  }
 }
 
 .slider__scale-line {
@@ -21,6 +85,13 @@
   border-radius: 6px;
   border: 1px solid @gray;
   background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    height: 6px;
+    width: 428px;
+    border-radius: 6px;
+    background-color: @scale-gray;
+  }
 }
 
 .slider__toggle {
@@ -30,4 +101,16 @@
   width: 35px;
   border-radius: 6px;
   background-color: @green;
+
+  @media (min-width: @tablet-width) {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background-color: @background-gray;
+    background-image: url("../img/toggle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    transform: translate(0, -50%);
+  }
 }

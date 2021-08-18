@@ -6,6 +6,23 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  position: absolute;
+  top: 100%;
+  z-index: 2;
+  background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    width: 460px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 500px;
+    background-color: inherit;
+  }
 }
 
 .main-nav__button {
@@ -19,6 +36,10 @@
   position: absolute;
   top: -52px;
   left: 270px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__button--close {
