@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -11,10 +12,10 @@
       <a class="page-header__logo" href="index.html"><img class="page-header__img" src="img/logo-mobile.svg" width="191" height="38" alt="Кэт энерджи логотип"></a>
       <nav class="main-nav">
         <button class="main-nav__button main-nav__button--close" type="button"></button>
-        <ul class="main-nav__list nav-list visually-hidden">
+        <ul class="main-nav__list nav-list">
           <li class="nav-list__item"><a class="nav-list__link" href="index.html">главная</a></li>
           <li class="nav-list__item"><a class="nav-list__link" href="catalog.html">каталог продукции</a></li>
-          <li class="nav-list__item nav-list__item--current"><a class="nav-list__link" href="">подбор программы<a></li>
+          <li class="nav-list__item nav-list__item--current nav-list__item-last-child"><a class="nav-list__link" href="">подбор программы<a></li>
         </ul>
       </nav>
     </header>
@@ -23,36 +24,44 @@
 
       <h1 class="page-form__title">Подбор программы</h1>
 
-      <p class="page-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="page-form__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
 
       <section class="program-selection">
         <h2 class="visually-hidden">Анкета</h2>
         <div class="program-selection__wrapper">
           <form class="program-selection__form form" method="get" action="https://echo.htmlacademy.ru">
-            <div class="form__field-row cat-data">
-              <label class="form__textfield-label" for="name">имя:*</label>
-              <input class="form__textfield" id="name" type="text" name="name" value="барсик">
-              <label class="form__textfield-label" for="weight">вес(кг):*</label>
-              <input class="form__textfield" id="weight" type="number" name="weight" value="7">
-              <label class="form__textfield-label" for="age">возраст(лет):*</label>
-              <input class="form__textfield form__textfield-last-child" id="age" type="number" name="age" value="7">
+            <div class="form__wrapper">
+              <div class="form__field-row cat-data">
+                <div class="cat-data__item">
+                  <label class="form__textfield-label" for="name">имя:*</label>
+                  <input class="form__textfield" id="name" type="text" name="name" value="барсик">
+                </div>
+                <div class="cat-data__item">
+                  <label class="form__textfield-label" for="weight">вес(кг):*</label>
+                  <input class="form__textfield" id="weight" type="number" name="weight" value="7">
+                </div>
+                <div class="cat-data__item">
+                  <label class="form__textfield-label" for="age">возраст(лет):*</label>
+                  <input class="form__textfield" id="age" type="number" name="age" value="7">
+                </div>
+              </div>
+              <fieldset class="form__field-row plan">
+                <ul class="plan__list">
+                  <li class="plan__item">
+                    <input class="visually-hidden form__radio" id="weight-loss" type="radio" name="plan" value="weight-loss" checked>
+                    <label class="form__radio-label" for="weight-loss">похудение</label>
+                  </li>
+                  <li class="plan__item">
+                    <input class="visually-hidden form__radio" id="muscles" type="radio" name="plan" value="muscles">
+                    <label class="form__radio-label" for="muscles">набор массы</label>
+                  </li>
+                  <li class="plan__item">
+                    <input class="visually-hidden form__radio" id="advice" type="radio" name="plan" value="advice">
+                    <label class="form__radio-label" for="advice">не знаю(нужен ваш совет)</label>
+                  </li>
+                </ul>
+              </fieldset>
             </div>
-            <fieldset class="form__field-row plan">
-              <ul class="plan__list">
-                <li class="plan__item">
-                  <input class="visually-hidden form__radio" id="weight-loss" type="radio" name="plan" value="weight-loss" checked>
-                  <label class="form__radio-label" for="weight-loss">похудение</label>
-                </li>
-                <li class="plan__item">
-                  <input class="visually-hidden form__radio" id="muscles" type="radio" name="plan" value="muscles">
-                  <label class="form__radio-label" for="muscles">набор массы</label>
-                </li>
-                <li class="plan__item">
-                  <input class="visually-hidden form__radio" id="advice" type="radio" name="plan" value="advice">
-                  <label class="form__radio-label" for="advice">не знаю(нужен ваш совет)</label>
-                </li>
-              </ul>
-            </fieldset>
             <fieldset class="form__field-row owner-data">
               <legend class="form__legend owner-data__legend">Контактные данные (владельца кота)</legend>
               <div class="owner-data__item">
@@ -115,14 +124,17 @@
 
       <section class="invitation invitation-background">
         <div class="invitation__wrapper">
-          <h2 class="invitation__text">приглашаем к сотрудничеству дилеров!</h2>
-          <p class="invitation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <h2 class="invitation__text">приглашаем<br>к сотрудничеству дилеров!</h2>
+          <div class="invitation__address">
+            <span class="invitation__street">ул. Большая Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург</span>
+          </div>
         </div>
       </section>
 
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.65030912397214!2d30.322977661206938!3d59.938758804878866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627225401298!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.65030912397214!2d30.322977661206938!3d59.938758804878866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627225401298!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </section>
     </main>
 

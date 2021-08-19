@@ -2,7 +2,6 @@
   background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
   background-position: top 25px center;
-  .center();
   padding: 78px 20px 25px;
   border-top: 1px solid @catalog-card-grey;
   border-bottom: 1px solid @catalog-card-grey;
@@ -12,6 +11,12 @@
     border: 2px solid @light-gray;
     width: 246px;
     margin: 0;
+    margin-top: 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 160px 38px 41px;
+    width: 165px;
   }
 }
 
@@ -32,6 +37,10 @@
     width: 140px;
     margin: 0 auto 33px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .more__text {
@@ -47,6 +56,10 @@
     width: 180px;
     margin: 0 auto 87px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 87px;
+  }
 }
 
 .more__button {
@@ -54,4 +67,9 @@
   line-height: 1.25;
   color: inherit;
   background-color: @light-gray;
+
+  @media (min-width: @desktop-width) {
+    padding: 10px 34px;
+    width: 101px;
+  }
 }

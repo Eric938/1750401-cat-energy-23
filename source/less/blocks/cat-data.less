@@ -1,4 +1,29 @@
 .cat-data {
   padding: 39px 20px 24px;
   border-bottom: 1px solid @border-gray;
+
+  @media (min-width: @tablet-width) {
+    padding: 66px 67px 72px 71px;
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin-right: 80px;
+    width: 570px;
+  }
+}
+
+.cat-data__item {
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: flex-end;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
 }
