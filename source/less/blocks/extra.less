@@ -1,21 +1,78 @@
 .extra {
   padding: 0 20px 32px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 123px 72px 71px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px 82px;
+  }
 }
 
 .extra__legend {
   margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .extra__list {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    color: @black;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .extra__item {
   margin-bottom: 13px;
-}
 
-.extra__item:last-child {
-  margin-bottom: 34px;
+  &:last-child {
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
+    margin-right: 120px;
+    width: 226px;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 100px;
+    margin-bottom: 11px;
+
+    &:nth-child(even) {
+      margin-right: 100px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
 }

@@ -14,6 +14,10 @@
       margin-right: 0;
     }
 
+    &-last-child {
+      margin-right: 0;
+    }
+
     &--current {
       border-bottom: 2px solid @green;
     }
@@ -22,7 +26,7 @@
   @media (min-width: @desktop-width) {
     padding-bottom: 8px;
 
-    &--current {
+    &--index-current {
       border-bottom: 2px solid @white;
     }
   }
@@ -45,6 +49,11 @@
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 1.48;
+  }
+}
+
+.nav-list__link-index {
+  @media (min-width: @desktop-width) {
     color: @white;
   }
 }

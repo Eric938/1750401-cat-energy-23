@@ -1,20 +1,66 @@
 .owner-data {
   padding: 26px 20px 23px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 67px 65px 71px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px 67px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .owner-data__legend {
-  width: 187px;
-  padding: 26px 0 0;
-  margin-bottom: 9px;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.owner-data__legend-title {
+  padding-right: 14px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 0;
+  }
 }
 
 .owner-data__item {
   position: relative;
-  width: 280px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 78px;
+    margin-bottom: 0;
+    width: 569px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .owner-data__icon {
   position: absolute;
   top: 15px;
-  right: 18px;
+  right: 16px;
+
+  @media (min-width: @tablet-width) {
+    top: 16px;
+    right: 17px;
+  }
 }
