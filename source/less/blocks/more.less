@@ -68,6 +68,15 @@
   color: inherit;
   background-color: @light-gray;
 
+  &:hover {
+    background-color: @catalog-card-grey;
+  }
+
+  &:active {
+    background-color: @catalog-card-grey;
+    color: fade(@font-gray, 30%);
+  }
+
   @media (min-width: @desktop-width) {
     padding: 10px 34px;
     width: 101px;

@@ -17,7 +17,20 @@
   text-decoration: none;
   color: inherit;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     margin-right: 22px;
   }
+}
+
+.academy-logo__link-logo:hover .academy-logo__icon-path {
+  fill: @green;
+}
+
+.academy-logo__link-logo:active .academy-logo__icon-path {
+  fill: @green;
+  opacity: 0.3;
 }

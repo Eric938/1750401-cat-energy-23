@@ -62,11 +62,19 @@
   line-height: 1.25;
   color: @black;
   text-transform: uppercase;
+  border-bottom: 1px dotted @black;
+
+  &:hover {
+    border-bottom: 1px solid @black;
+  }
+
+  &:active {
+    border-bottom: none;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 1.48;
-    border-bottom: 1px dotted @black;
   }
 }
 
@@ -103,14 +111,21 @@
   background-color: @green;
 
   @media (min-width: @tablet-width) {
-    height: 34px;
-    width: 34px;
-    border-radius: 50%;
-    background-color: @background-gray;
+    height: 44px;
+    width: 44px;
+    background-color: inherit;
     background-image: url("../img/toggle.svg");
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
     transform: translate(0, -50%);
+  }
+
+  &:hover {
+    background-image: url("../img/toggle-hover.svg");
+  }
+
+  &:active {
+    background-image: url("../img/toggle-pressed.svg");
   }
 }

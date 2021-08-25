@@ -15,7 +15,6 @@
   font-family: "Oswald", "Arial Narrow", "Arial", sans-serif;
   font-weight: 400;
   border: none;
-  overflow: hidden;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -42,12 +41,36 @@
   font-weight: 400;
   text-transform: uppercase;
   border: 1px solid @textfield-gray;
-  height: 35px;
+  height: 33px;
   flex: 1;
+  outline: none;
+
+  &:hover {
+    border: 1px solid @gray;
+  }
+
+  &:focus {
+    border: 2px solid @font-gray;
+    height: 31px;
+  }
+
+  &:invalid {
+    border: 2px solid @red;
+    height: 31px;
+  }
+
 
   @media (min-width: @tablet-width) {
     padding: 11px 20px;
-    height: 30px;
+    height: 28px;
+
+    &:focus {
+      height: 26px;
+    }
+
+    &:invalid {
+      height: 26px;
+    }
   }
 }
 
@@ -63,6 +86,14 @@
   @media (min-width: @tablet-width) {
     padding-left: 60px;
   }
+}
+
+.form__radio:hover + .form__radio-label::before {
+  border: 1px solid @grey-hover;
+}
+
+.form__radio:disabled + .form__radio-label {
+  opacity: 0.3;
 }
 
 .form__radio:checked + .form__radio-label::before {
@@ -210,6 +241,14 @@
     width: 40px;
     height: 40px;
   }
+}
+
+.form__checkbox:hover + .form__checkbox-label::before {
+  border: 1px solid @grey-hover;
+}
+
+.form__checkbox:disabled + .form__checkbox-label {
+  opacity: 0.3;
 }
 
 .form__checkbox:checked + .form__checkbox-label::before {

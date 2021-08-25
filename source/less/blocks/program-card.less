@@ -110,6 +110,10 @@
   text-transform: uppercase;
   position: relative;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 1.48;
@@ -130,4 +134,15 @@
     left: 133px;
     top: 10px;
   }
+}
+
+.program-card__link:hover::after {
+  background-image: url("../img/arrow-hover.svg");
+  width: 32px;
+}
+
+.program-card__link:active::after {
+  background-image: url("../img/arrow-hover.svg");
+  opacity: 0.3;
+  width: 32px;
 }
