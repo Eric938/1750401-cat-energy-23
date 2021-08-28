@@ -109,6 +109,7 @@
   color: @black;
   text-transform: uppercase;
   position: relative;
+  padding-right: 15px;
 
   &:active {
     opacity: 0.3;
@@ -117,6 +118,7 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 1.48;
+    padding-right: 25px;
   }
 }
 
@@ -124,14 +126,13 @@
   content: "";
   position: absolute;
   top: 5px;
-  left: 100px;
+  left: 100%;
   width: 24px;
   height: 12px;
   background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
-    left: 133px;
     top: 10px;
   }
 }

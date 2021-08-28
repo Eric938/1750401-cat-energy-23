@@ -74,8 +74,20 @@
   }
 }
 
+.form__icon {
+  color: @font-dark-gray;
+}
+
 .form__textfield-with-icon {
   padding-right: 45px;
+
+  &:focus + .form__icon {
+    color: @green;
+  }
+
+  &:invalid + .form__icon {
+    color: @red;
+  }
 }
 
 .form__radio-label {

@@ -27,6 +27,17 @@
 }
 
 .social__button {
+  color: @icon-gray;
+
+  &:hover {
+    color: @green;
+  }
+
+  &:active {
+    color: @green;
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     display: block;
     width: 100%;
@@ -53,34 +64,5 @@
   @media (min-width: @tablet-width) {
     width: 13px;
     height: 33px;
-  }
-}
-
-.social__button:hover .social__icon-path {
-  fill: @green;
-}
-
-.social__button:active .social__icon-path {
-  fill: @green;
-  opacity: 0.3;
-}
-
-.social__button:hover .social__icon-path-fb {
-  stroke: @green;
-}
-
-.social__button:active .social__icon-path-fb {
-  stroke: @green;
-  opacity: 0.3;
-}
-
-.social__icon-path-fb {
-  &:hover {
-    stroke: @green;
-  }
-
-  &:active {
-    stroke: @green;
-    opacity: 0.3;
   }
 }
