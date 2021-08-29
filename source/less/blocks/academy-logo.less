@@ -1,22 +1,33 @@
-.academy-logo {
+.academy-logo__link {
+  color: @icon-gray;
   padding-top: 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  @media (min-width: @tablet-width) {
-    padding: 0;
-  }
-}
-
-.academy-logo__link-text {
+  text-decoration: none;
   font-family: inherit;
   font-size: 16px;
   line-height: 1.12;
   font-weight: 400;
-  text-decoration: none;
-  color: inherit;
 
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
+  &:hover .academy-logo__icon {
+    color: @green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active .academy-logo__icon {
+    color: @green;
+  }
+}
+
+.academy-logo__link-text {
   @media (min-width: @tablet-width) {
     margin-right: 22px;
   }
