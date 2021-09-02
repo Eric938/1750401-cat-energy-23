@@ -1,5 +1,4 @@
 .page-header {
-  min-height: 65px;
   display: flex;
   flex-direction: column;
 
@@ -48,6 +47,18 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+.page-header__img {
+  @media (min-width: @tablet-width) {
+    width: 175px;
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }
 

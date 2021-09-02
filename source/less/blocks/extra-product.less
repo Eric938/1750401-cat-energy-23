@@ -1,5 +1,5 @@
 .extra-product {
-  padding: 13px 0 19px;
+  padding: 12px 0 19px;
   border-top: 1px solid @gray;
 
   &:last-child {
@@ -16,11 +16,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 15px 0 17px;
+    padding: 15px 0;
     border: none;
     border-top: 1px solid @gray;
     align-items: center;
     width: 895px;
+    justify-content: flex-start;
   }
 }
 
@@ -40,12 +41,13 @@
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
     width: 170px;
+    margin-right: 155px;
   }
 }
 
@@ -53,18 +55,20 @@
   font-size: 14px;
   line-height: 1;
   margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 1.25;
-    margin-bottom: 23px;
+    padding-top: 5px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
     width: 288px;
-    display: flex;
-    justify-content: space-between;
+    margin-right: 37px;
   }
 }
 
@@ -83,7 +87,7 @@
   line-height: 1.25;
 
   @media (min-width: @tablet-width) {
-    padding: 7px 20px;
+    padding: 10px 20px;
     width: 100%;
   }
 

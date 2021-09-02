@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
 
   <body class="page__body">
     <header class="page-header page-header--border-bottom">
-      <a class="page-header__logo" href="index.html"><img class="page-header__img" src="img/logo-mobile.svg" width="191" height="38" alt="Кэт энерджи логотип"></a>
+      <a class="page-header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="page-header__img" src="img/logo-mobile.svg" width="191" height="38" alt="Кэт энерджи логотип">
+        </picture>
+      </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__button" type="button"></button>
         <ul class="main-nav__list nav-list">
@@ -28,7 +38,10 @@
         <div class="catalog-cards__wrapper">
           <div class="catalog-cards__item catalog-card">
             <a class="catalog-card__link-img" href="">
-              <img class="catalog-card__img" src="img/food/chiken.png" width="68" height="84" alt="оранживая упаковка еды кэт энерджи">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/food/chiken-tablet.png 1x, img/food/chiken-tablet-2x.png 2x">
+                <img class="catalog-card__img catalog-card__small-img" src="img/food/chiken.png" width="68" height="86" srcset="img/food/chiken-tablet.png 2x" alt="оранживая упаковка еды кэт энерджи">
+              </picture>
             </a>
             <div class="catalog-card__item">
               <a class="catalog-card__link-title" href="">
@@ -53,7 +66,10 @@
           </div>
           <div class="catalog-cards__item catalog-card">
             <a class="catalog-card__link-img" href="">
-              <img class="catalog-card__img" src="img/food/chiken-big.png"  width="84" height="100" alt="большая оранживая упаковка еды кэт энерджи">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/food/big-chiken-tablet.png 1x, img/food/big-chiken-tablet-2x.png 2x">
+                <img class="catalog-card__img catalog-card__big-img" src="img/food/chiken-big.png"  width="84" height="100" srcset="img/food/big-chiken-tablet.png 2x" alt="большая оранживая упаковка еды кэт энерджи">
+              </picture>
             </a>
             <div class="catalog-card__item">
               <a class="catalog-card__link-title" href="">
@@ -78,7 +94,10 @@
           </div>
           <div class="catalog-cards__item catalog-card">
             <a class="catalog-card__link-img" href="">
-              <img class="catalog-card__img" src="img/food/fish.png" width="68" height="78" alt="зеленая упаковка еды кэт энерджи">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/food/fish-tablet.png 1x, img/food/fish-tablet-2x.png 2x">
+                <img class="catalog-card__img catalog-card__small-img" src="img/food/fish.png" width="68" height="78" srcset="img/food/fish-tablet.png 2x" alt="зеленая упаковка еды кэт энерджи">
+              </picture>
             </a>
             <div class="catalog-card__item">
               <a class="catalog-card__link-title" href="">
@@ -103,7 +122,10 @@
           </div>
           <div class="catalog-cards__item catalog-card">
             <a class="catalog-card__link-img" href="">
-              <img class="catalog-card__img" src="img/food/fish-big.png" width="84" height="100" alt="большая зеленая упаковка еды кэт энерджи">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/food/big-fish-tablet.png 1x, img/food/big-fish-tablet-2x.png 2x">
+                <img class="catalog-card__img catalog-card__big-img" src="img/food/fish-big.png"  width="84" height="100" srcset="img/food/big-fish-tablet.png 2x" alt="большая зеленая упаковка еды кэт энерджи">
+              </picture>
             </a>
             <div class="catalog-card__item">
               <a class="catalog-card__link-title" href="">
@@ -128,7 +150,10 @@
           </div>
           <div class="catalog-cards__item catalog-card">
             <a class="catalog-card__link-img" href="">
-              <img class="catalog-card__img" src="img/food/buckwheat.png" width="68" height="78" alt="синяя упаковка еды кэт энерджи">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/food/buckwheat-tablet.png 1x, img/food/buckwheat-tablet-2x.png 2x">
+                <img class="catalog-card__img catalog-card__small-img" src="img/food/buckwheat.png" width="68" height="78" srcset="img/food/buckwheat-tablet.png 2x" alt="синяя упаковка еды кэт энерджи">
+              </picture>
             </a>
             <div class="catalog-card__item">
               <a class="catalog-card__link-title" href="">
@@ -153,7 +178,10 @@
           </div>
           <div class="catalog-cards__item catalog-card">
             <a class="catalog-card__link-img" href="">
-              <img class="catalog-card__img" src="img/food/buckwheat-big.png" width="84" height="100" alt="большая синяя упаковка еды кэт энерджи">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/food/big-buckwheat-tablet.png 1x, img/food/big-buckwheat-tablet-2x.png 2x">
+                <img class="catalog-card__img catalog-card__big-img" src="img/food/buckwheat-big.png" width="84" height="100" srcset="img/food/big-buckwheat-tablet.png 2x" alt="большая синяя упаковка еды кэт энерджи">
+              </picture>
             </a>
             <div class="catalog-card__item">
               <a class="catalog-card__link-title" href="">
@@ -178,7 +206,10 @@
           </div>
           <div class="catalog-cards__item catalog-card">
             <a class="catalog-card__link-img" href="">
-              <img class="catalog-card__img" src="img/food/rice.png" width="72" height="84" alt="фиолетовая упаковка еды кэт энерджи">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/food/rice-tablet.png 1x, img/food/rice-tablet-2x.png 2x">
+                <img class="catalog-card__img catalog-card__small-img" src="img/food/rice.png" width="72" height="84" srcset="img/food/rice-tablet.png 2x" alt="фиолетовая упаковка еды кэт энерджи">
+              </picture>
             </a>
             <div class="catalog-card__item">
               <a class="catalog-card__link-title" href="">
@@ -220,10 +251,10 @@
                 <h3 class="extra-product__title">сахарозаменитель</h3>
               </a>
               <div class="extra-product__info">
-                <span class="extra-product__info-quantity">1 упаковка(100г)</span>
+                <span class="extra-product__info-quantity">1 упаковка (100г)</span>
                 <span>200 Р.</span>
               </div>
-              <a class="extra-product__button button" href="">заказать</a>
+              <a class="button extra-product__button" href="">заказать</a>
             </div>
             <div class="extra-products__product extra-product">
               <a class="extra-product__link-title" href="">
@@ -233,7 +264,7 @@
                 <span class="extra-product__info-quantity">5 литров</span>
                 <span>50 Р.</span>
               </div>
-              <a class="extra-product__button button" href="">заказать</a>
+              <a class="button extra-product__button" href="">заказать</a>
             </div>
             <div class="extra-products__product extra-product">
               <a class="extra-product__link-title" href="">
@@ -243,24 +274,24 @@
                 <span class="extra-product__info-quantity">1 литр</span>
                 <span>100 Р.</span>
               </div>
-              <a class="extra-product__button button" href="">заказать</a>
+              <a class="button extra-product__button" href="">заказать</a>
             </div>
             <div class="extra-products__product extra-product">
               <a class="extra-product__link-title" href="">
                 <h3 class="extra-product__title">витамины</h3>
               </a>
               <div class="extra-product__info">
-                <span class="extra-product__info-quantity">1 упаковка(30г)</span>
+                <span class="extra-product__info-quantity">1 упаковка (30г)</span>
                 <span>300 Р.</span>
               </div>
-              <a class="extra-product__button button" href="">заказать</a>
+              <a class="button extra-product__button" href="">заказать</a>
             </div>
           </div>
           <div class="gift">
             <h2 class="visually-hidden">Акция</h2>
             <div class="gift__wrapper">
               <div class="gift__background">
-                <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
+                <p class="gift__text">Закажите все<br>и получите чехол для кота в подарок!</p>
               </div>
             </div>
           </div>
