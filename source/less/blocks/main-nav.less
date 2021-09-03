@@ -12,12 +12,15 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    width: 460px;
+    width: 440px;
+    min-height: 80px;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
-    width: 500px;
+    width: 480px;
     background-color: inherit;
+    min-height: 83px;
   }
 }
 
@@ -34,7 +37,7 @@
   right: 50%;
   margin-right: -143px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     display: none;
   }
 }

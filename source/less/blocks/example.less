@@ -13,16 +13,16 @@
 .example__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 27px 0 31px;
+  padding: 27px 0 36px;
 
   @media (min-width: @tablet-width) {
     width: 708px;
-    padding: 43px 30px 69px;
+    padding: 43px 30px 77px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
-    padding: 70px 110px 68px;
+    padding: 68px 110px 58px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -47,7 +47,7 @@
   font-family: "Oswald", "Arial Narrow", "Arial", sans-serif;
   width: 100%;
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 35px;
   font-size: 36px;
   font-weight: 400;
   line-height: 1.11;
@@ -60,7 +60,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 146px;
+    margin-bottom: 147px;
   }
 }
 
@@ -79,15 +79,25 @@
   }
 }
 
+.example__br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .example__box-wrapper {
-  margin-bottom: 32px;
+  margin-bottom: 27px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 240px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 60px;
+    margin-bottom: 56px;
   }
 }
 
@@ -96,6 +106,7 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    margin-right: 35px;
   }
 }
 

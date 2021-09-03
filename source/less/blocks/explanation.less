@@ -3,14 +3,14 @@
   padding: 27px 20px 42px;
 
   @media (min-width: @tablet-width) {
-    width: 629px;
-    padding: 0 109px 47px 30px;
+    width: 708px;
+    padding: 0 30px 47px 30px;
     border-bottom: 1px solid @border-light-gray;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1224px;
-    padding: 0 106px 0 110px;
+    width: 1230px;
+    padding: 0 100px 0 110px;
     border-bottom: none;
   }
 }
@@ -45,7 +45,7 @@
 }
 
 .explanation__item {
-  padding: 3px 0 3px 75px;
+  padding: 3px 0 3px 80px;
   margin: 0;
   margin-bottom: 20px;
   width: 200px;
@@ -58,7 +58,7 @@
   @media (min-width: @tablet-width) {
     width: 250px;
     padding: 111px 0 57px;
-    margin: 0 129px 37px 0;
+    margin: 0 133px 77px 0;
 
     &:nth-child(even) {
       margin-right: 0;
@@ -72,7 +72,8 @@
       content: counter(li);
       counter-increment: li;
       position: absolute;
-      transform: translate(60%, -53%);
+      transform: translate(85%, -54%);
+      font-family: "Oswald", "Arial Narrow", "Arial", sans-serif;
       font-size: 280px;
       line-height: 1;
       color: @light-gray;
@@ -81,10 +82,10 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    margin-right: 74px;
+    margin-right: 75px;
 
     &:nth-child(even) {
-      margin-right: 74px;
+      margin-right: 75px;
     }
 
     &:nth-child(4n) {
@@ -106,6 +107,12 @@
 
   &--fast {
     background-image: url("../img/list/clock.svg");
+  }
+}
+
+.explanation__br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
 }
 
