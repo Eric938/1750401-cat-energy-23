@@ -17,13 +17,23 @@
   background-color: @green;
   background-repeat: no-repeat;
   box-sizing: border-box;
-  padding: 188px 57px 43px;
+  padding: 187px 57px 42px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift.svg"), url("../img/back-cat-catalog-2x.jpg");
+    background-size: auto, 280px 289px;
+  }
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/gift.svg"), url("../img/back-cat-catalog-tab.jpg");
     background-position: top 57px left 78px, center;
     padding: 72px 120px 70px 422px;
     min-height: 200px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift.svg"), url("../img/back-cat-catalog-tab-2x.jpg");
+      background-size: auto, 708px 200px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -32,6 +42,11 @@
     width: 245px;
     background-position: top 56px center, center;
     padding: 186px 39px 42px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift.svg"), url("../img/back-cat-catalog-2x.jpg");
+      background-size: auto, 245px 289px;
+    }
   }
 }
 
