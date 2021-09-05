@@ -45,11 +45,9 @@
 }
 
 .explanation__item {
-  padding: 3px 0 3px 80px;
   margin: 0;
   margin-bottom: 20px;
-  width: 200px;
-  background-repeat: no-repeat;
+  position: relative;
 
   &:last-child {
     margin-bottom: 0;
@@ -57,7 +55,6 @@
 
   @media (min-width: @tablet-width) {
     width: 250px;
-    padding: 111px 0 57px;
     margin: 0 133px 77px 0;
 
     &:nth-child(even) {
@@ -68,11 +65,11 @@
       margin-bottom: 0;
     }
 
-    &::before {
+    &::after {
       content: counter(li);
       counter-increment: li;
       position: absolute;
-      transform: translate(85%, -54%);
+      transform: translate(85%, -100%);
       font-family: "Oswald", "Arial Narrow", "Arial", sans-serif;
       font-size: 280px;
       line-height: 1;
@@ -92,22 +89,6 @@
       margin-right: 0;
     }
   }
-
-  &--healthy {
-    background-image: url("../img/list/leaf.svg");
-  }
-
-  &--powder {
-    background-image: url("../img/list/powder.svg");
-  }
-
-  &--eating {
-    background-image: url("../img/list/tableware.svg");
-  }
-
-  &--fast {
-    background-image: url("../img/list/clock.svg");
-  }
 }
 
 .explanation__br {
@@ -118,8 +99,82 @@
 
 .explanation__item-text {
   margin: 0;
+  padding: 3px 0 3px 80px;
+
+  &--healthy::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background-color: @green;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/list/leaf.svg");
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--powder::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background-color: @green;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/list/powder.svg");
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--eating::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background-color: @green;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/list/tableware.svg");
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--fast::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background-color: @green;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/list/clock.svg");
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
+    padding: 111px 0 57px;
     position: relative;
     z-index: 1;
   }

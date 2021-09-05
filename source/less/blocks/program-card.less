@@ -47,10 +47,17 @@
     background-position: 0 0;
 
     @media (min-width: @tablet-width) {
-      display: none;
+      left: 394px;
+      top: 1px;
+      width: 200px;
+      height: 211px;
+      background-size: 200px 211px;
     }
 
     @media (min-width: @desktop-width) {
+      left: 0;
+      top: -38px;
+      background-size: 100px 106px;
       width: 100px;
       height: 106px;
     }
@@ -65,15 +72,22 @@
     height: 50px;
     background-image: url("../img/muscles-gain.svg");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: center;
 
     @media (min-width: @tablet-width) {
-      display: none;
+      left: 360px;
+      top: 14px;
+      background-size: 268px 200px;
+      width: 268px;
+      height: 200px;
     }
 
     @media (min-width: @desktop-width) {
+      left: -19px;
+      top: -30px;
+      background-size: 134px 100px;
       width: 134px;
-      height: 106px;
+      height: 100px;
     }
   }
 }
@@ -91,6 +105,7 @@
     padding: 0;
     border-bottom: none;
     color: @black;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
