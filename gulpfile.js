@@ -129,6 +129,7 @@ const server = (done) => {
     ui: false,
   });
   done();
+}
 
 exports.server = server;
 
