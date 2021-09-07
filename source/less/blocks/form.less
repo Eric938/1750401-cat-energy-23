@@ -141,6 +141,10 @@
   }
 }
 
+.form__radio:focus + .form__radio-label::before {
+  outline: 1px auto @black;
+}
+
 .form__legend-container {
   min-width: 80%;
   text-align: left;
@@ -283,6 +287,10 @@
     height: 38px;
     background-size: 27px 27px;
   }
+}
+
+.form__checkbox:focus + .form__checkbox-label::before {
+  outline: 1px auto @black;
 }
 
 .form__button {
