@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
@@ -120,19 +122,21 @@
               </div>
               <div class="slider__item" style="left: 50%; width: 53%">
                 <picture>
-                  <source type="image/webp" srcset="img/after.webp 1x, img/after-2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/after.webp 1x, img/after-2x.webp 2x">
+                  <source type="image/webp" srcset="img/after.webp">
 
-                  <img class="slider__img slider__img-none" src="img/after.png" width="311" height="232" srcset="img/after-2x.png 2x" alt="Кот после похудения">
+                  <source media="(min-width: 768px)" srcset="img/after.png 1x, img/after-2x.png 2x">
+                  <img class="slider__img slider__img-none" src="img/after.png" width="311" height="232" alt="Кот после похудения">
                 </picture>
               </div>
             </div>
             <div class="slider__scale-wrapper">
-              <span class="slider__text slider__text--before">было</span>
+              <span class="slider__text">было</span>
               <div class="slider__scale">
                 <div class="slider__scale-line"></div>
                 <div class="slider__toggle" tabindex="0" style="left: 50%"></div>
               </div>
-              <span class="slider__text slider__text--after">стало</span>
+              <span class="slider__text">стало</span>
             </div>
           </div>
         </div>
